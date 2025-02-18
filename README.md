@@ -88,11 +88,16 @@ SecureFileSharingApp/
 ## API Endpoints
 | Method | Endpoint | Description |
 |--------|---------|-------------|
-| POST   | `/api/auth/login/` | User login |
-| POST   | `/api/auth/register/` | User registration |
-| POST   | `/api/files/upload/` | Upload a file |
-| GET    | `/api/files/list/` | List user files |
-| GET    | `/api/files/download/<file_id>/` | Download a file |
+| POST   | `/api/login/` | User login |
+| POST   | `/api/register/` | User registration |
+| POST   | `/api/upload/` | Upload a file |
+| GET    | `/api/list/` | List user files |
+| GET    | `/api/download/<file_id>/` | Download a file |
+| GET    | `/api/download/<file_id>/iv` | Get file encryption IV |
+| DELETE | `/api/delete/<file_id>/` | Delete a file |
+| POST   | `/api/create-share/` | Create a shared file link |
+| GET    | `/api/access-share/<token>/` | Access a shared file |
+| GET    | `/api/users/` | List all users |
 
 ---
 
@@ -143,4 +148,3 @@ For questions or feedback, reach out at **your.email@example.com**.
 ---
 
 🚀 Happy Coding! 🎯
-
