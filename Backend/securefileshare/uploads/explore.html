@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-gray-200">
+        <!-- Navbar -->
+        <div class="bg-white w-full shadow">
+            <div class="px-10 h-12 flex items-center justify-between">
+                <div class="flex items-center gap-6">
+                    <span>Logo</span>
+                    <nav class="flex gap-4">
+                        <a href="#" class="text-gray-700 hover:text-gray-700/90"
+                            >Home</a
+                        >
+                        <a href="#" class="text-gray-700 hover:text-gray-700/90"
+                            >View</a
+                        >
+                    </nav>
+                </div>
+                <div class="flex items-center gap-2">
+                    <!-- Search Bar -->
+                    <div class="relative">
+                        <input
+                            type="text"
+                            placeholder="Search..."
+                            class="pl-10 pr-4 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"
+                        />
+                        <!-- Search Icon -->
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"
+                        >
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.3-4.3" />
+                        </svg>
+                    </div>
+                    <!-- / Search Bar -->
+                    <button
+                        class="border border-blue-300 rounded-md text-sm font-medium py-1.5 px-2 text-gray-700"
+                    >
+                        Login
+                    </button>
+                    <button
+                        class="border border-blue-300 rounded-md text-sm font-medium py-1.5 px-2 text-gray-700 uppercase"
+                    >
+                        create free account
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- / Navbar -->
+
+        <main class="p-10">
+            <!-- Card -->
+            <div class="rounded-lg bg-white shadow">
+                <!-- Header -->
+                <div class="px-4 pt-6">
+                    <!-- Title -->
+                    <h3 class="text-xl pb-2 font-medium">Popular themes</h3>
+                    <!-- / Title -->
+                    <!-- Description -->
+                    <p class="text-gray-700">Popular investing themes</p>
+                    <!-- / Description -->
+                </div>
+                <!-- / Header -->
+
+                <!-- Body -->
+                <div class="px-4 py-6 grid grid-cols-3 grid-flow-row gap-4">
+                    <!--  -->
+                    <a href="#" class="group">
+                        <div class="border rounded p-2">
+                            <h6 class="font-medium group-hover:text-blue-600">
+                                Low on 10 year avg earnings
+                            </h6>
+                            <p class="truncate text-gray-700 text-sm">
+                                Graham liked to value stocks based on average
+                                earnings of multiple years. This screen uses 10
+                                year average earnings.
+                            </p>
+                        </div>
+                    </a>
+                    <!--  -->
+                </div>
+                <!-- / Body -->
+            </div>
+            <!-- / Card -->
+        </main>
+    </body>
+</html>

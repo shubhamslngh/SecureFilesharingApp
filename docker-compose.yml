@@ -1,0 +1,18 @@
+
+services:
+  backend:
+    build: ./Backend/securefileshare
+    container_name: django_backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - Backend/.env
+
+
+  frontend:
+    build: ./frontend
+    container_name: react_frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
